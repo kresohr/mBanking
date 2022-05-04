@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:gravity="top"
+    android:orientation="horizontal">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/blueBg"
+        app:cardElevation="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineCardFirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.16" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineCardSecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.32" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineCardThird"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.48" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineCardFourth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.64" />
+
+            <TextView
+                android:id="@+id/txtTransactionDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/hintTransaction"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/verticalLine"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/txtTransactionDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/hintDate"
+                android:textColor="@color/dirtyWhiteBg"
+                android:textSize="12sp"
+                android:layout_marginTop="18dp"
+                app:layout_constraintStart_toStartOf="@id/verticalLine"
+                app:layout_constraintTop_toTopOf="@id/txtTransactionDescription" />
+
+            <TextView
+                android:id="@+id/lblCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/lblType"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/verticalLine"
+                app:layout_constraintTop_toBottomOf="@id/txtTransactionDate" />
+
+            <TextView
+                android:id="@+id/txtTransactionType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/hintType"
+                android:textColor="@color/dirtyWhiteBg"
+                android:textSize="12sp"
+                android:layout_marginTop="18dp"
+                app:layout_constraintStart_toStartOf="@id/verticalLine"
+                app:layout_constraintTop_toTopOf="@id/lblCategory" />
+            <TextView
+                android:id="@+id/lblAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/lblAmount"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/verticalLine"
+                app:layout_constraintTop_toBottomOf="@id/txtTransactionType" />
+
+            <TextView
+                android:id="@+id/txtTransactionAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/hintAmount"
+                android:textColor="@color/dirtyWhiteBg"
+                android:textSize="12sp"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="@id/verticalLine"
+                app:layout_constraintTop_toTopOf="@id/lblAmount" />
+            <TextView
+                android:id="@+id/lblCurrency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/lblCurrency"
+                android:textColor="@color/dirtyWhiteBg"
+                android:textSize="12sp"
+                android:layout_marginTop="18dp"
+                app:layout_constraintStart_toEndOf="@id/txtTransactionAmount"
+                app:layout_constraintTop_toTopOf="@id/lblAmount" />
+
+            <ImageView
+                android:id="@+id/transactionIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:tint="@color/white"
+                android:src="@drawable/ic_coins"
+                android:layout_marginStart="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <View
+                android:id="@+id/verticalLine"
+                app:layout_constraintStart_toEndOf="@id/transactionIcon"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

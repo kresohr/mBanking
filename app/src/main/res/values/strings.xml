@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">mBanking</string>
+    <string name="welcomeActivityTitle">Welcome</string>
+    <string name="welcomeActivitySubTitle">Your financial life made easy with mBanking</string>
+    <string name="registrationFirstStepTitle">Registration</string>
+    <string name="registrationFirstStepSubTitle">Enter your personal details</string>
+    <string name="lblChoosePin">Choose your pin</string>
+    <string name="lblEnterPin">Enter your pin</string>
+    <string name="hintFirstName">First name</string>
+    <string name="hintLastName">Last name</string>
+    <string name="hintAccount">HR123456789012345678901</string>
+    <string name="hintBalance">2.523,00</string>
+    <string name="hintCurrency">HRK</string>
+    <string name="hintTransaction">Transaction 1</string>
+    <string name="lblTransactionList">Transaction list</string>
+    <string name="lblDefaultTransactionType">Transfer</string>
+    <string name="hintDate">25.03.2016</string>
+    <string name="lblType">Category</string>
+    <string name="lblAmount">Amount</string>
+    <string name="lblCurrency">USD</string>
+    <string name="lblLogin">Hello</string>
+    <string name="hintAmount">2000.00</string>
+    <string name="hintType">TRANSFER</string>
+    <string name="hintPin">PIN (6 digit)</string>
+    <string name="buttonNext">Next</string>
+    <string name="buttonEnter">Enter</string>
+    <string name="loginActivityTitle">Welcome back</string>
+    <string name="loginButton">Login</string>
+    <string name="lblUseBiometry">Use fingerprint to access your bank account</string>
+    <string name="lblCurrentAccount">Current account</string>
+    <string name="lblBalance">Balance</string>
+    <string name="buttonGetStarted">GET STARTED</string>
+</resources>
