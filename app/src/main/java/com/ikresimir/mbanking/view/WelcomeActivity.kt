@@ -15,13 +15,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
         val loginViewModel = LoginViewModel(this)
-
         checkIfUserLogged(loginViewModel)
         val btnGetStarted: Button = findViewById(R.id.btnGetStarted)
 
         btnGetStarted.setOnClickListener {
             val intent = Intent(this, RegistrationActivity::class.java)
             this.startActivity(intent)
+            finish()
         }
     }
 

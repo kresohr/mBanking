@@ -2,7 +2,6 @@ package com.ikresimir.mbanking.viewmodel
 
 import android.content.Context
 import android.content.Intent
-import android.widget.Toast
 import com.ikresimir.mbanking.data.Repository
 import com.ikresimir.mbanking.view.AccountActivity
 
@@ -15,6 +14,5 @@ class RegistrationViewModel(context: Context) {
             val intent = Intent(context, AccountActivity::class.java)
             context.startActivity(intent)
         }
-
     }
 }

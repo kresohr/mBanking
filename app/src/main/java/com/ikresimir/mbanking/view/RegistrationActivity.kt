@@ -13,7 +13,7 @@ class RegistrationActivity : AppCompatActivity() {
         val firstFragment = FirstRegistrationStepFragment()
 
         supportFragmentManager.beginTransaction().apply {
-            replace(R.id.flFragment, firstFragment)
+            replace(R.id.flFragment, firstFragment).addToBackStack(null)
             commit()
         }
     }

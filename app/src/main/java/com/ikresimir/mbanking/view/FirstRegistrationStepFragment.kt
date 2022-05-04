@@ -55,7 +55,7 @@ class FirstRegistrationStepFragment : Fragment() {
         val transaction = this.parentFragmentManager.beginTransaction()
         val secondFragment = SecondRegistrationStepFragment()
         secondFragment.arguments = bundle
-        transaction.replace(R.id.flFragment, secondFragment).addToBackStack("firstFragment")
+        transaction.replace(R.id.flFragment, secondFragment).addToBackStack(null)
         transaction.commit()
     }
 

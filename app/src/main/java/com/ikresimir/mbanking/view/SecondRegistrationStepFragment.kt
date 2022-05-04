@@ -8,12 +8,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import android.view.inputmethod.InputMethodManager.SHOW_FORCED
-import android.view.inputmethod.InputMethodManager.SHOW_IMPLICIT
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import com.ikresimir.mbanking.R
 import com.ikresimir.mbanking.viewmodel.RegistrationViewModel
 
@@ -59,7 +59,13 @@ class SecondRegistrationStepFragment : Fragment(R.layout.fragment_second_registr
             Toast.makeText(requireContext(), "Must be exactly 6 digits", Toast.LENGTH_SHORT).show()
         } else {
             registrationViewModel.registerUser(firstName, lastName, PIN)
+            removeAllFromBackStack()
         }
+    }
+
+    fun removeAllFromBackStack(){
+        val fm: FragmentManager = requireActivity().supportFragmentManager
+        fm.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE)
     }
 
 }

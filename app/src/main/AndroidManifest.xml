@@ -15,6 +15,7 @@
         <activity android:name=".view.LoginActivity"></activity>
         <activity android:name=".view.AccountActivity" />
         <activity
+            android:noHistory="true"
             android:name=".view.RegistrationActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity
