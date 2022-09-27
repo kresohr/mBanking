@@ -8,6 +8,9 @@ This project was a task for internship position.
 **- Sorting** - All the transactions can be sorted with a button  
 *UI/UX was optional*
 
+## Application preview
+<img src="https://media4.giphy.com/media/OqMQusKQnKn91oNJKK/giphy.gif?cid=790b761195226f27fefe85539639a6e8f4ba8dcb083423f7&rid=giphy.gif" width="250">
+
 ## Screenshots
 ### Biometric authentication
 <img src="https://i.ibb.co/sbMzBHh/IMG-20220927-205510.jpg" width="250">
